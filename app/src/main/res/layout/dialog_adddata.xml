@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog"
+    android:orientation="vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:paddingBottom="@dimen/_5sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.dc024.ptsgenap_11rpl1_absen11.ui.CustomTextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_dialog_top"
+            android:gravity="left"
+            android:padding="@dimen/_10sdp"
+            android:text="ADD DATA"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_6ssp"
+        android:layout_marginRight="@dimen/_6ssp"
+        android:gravity="center_vertical"
+        android:padding="8sp">
+
+        <com.dc024.ptsgenap_11rpl1_absen11.ui.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="#4E4E4E"
+            android:text="KODE"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/etKode1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="1dp"
+            android:background="#00000000"
+            android:gravity="top|left"
+            android:hint="Kode ..."
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="bold"
+            android:enabled="true"
+            android:inputType="textCapCharacters"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_6ssp"
+        android:layout_marginRight="@dimen/_6ssp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:padding="8sp">
+
+        <com.dc024.ptsgenap_11rpl1_absen11.ui.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="#4E4E4E"
+            android:text="NAMA"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/etNamaUser1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="5dp"
+            android:background="#00000000"
+            android:gravity="top|left"
+            android:hint="Nama yang akan tampil di aplikasi"
+            android:inputType="textCapCharacters"
+            android:textColor="#252525"
+            android:textSize="@dimen/_10ssp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_6ssp"
+        android:layout_marginRight="@dimen/_6ssp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:padding="8sp">
+
+        <com.dc024.ptsgenap_11rpl1_absen11.ui.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="#4E4E4E"
+            android:text="JENIS"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/etJenis1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="5dp"
+            android:background="#00000000"
+            android:gravity="top|left"
+            android:hint="Jenis yang akan tampil di aplikasi"
+            android:inputType="textCapCharacters"
+            android:textColor="#252525"
+            android:textSize="@dimen/_10ssp" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="@dimen/_10ssp"
+        android:layout_marginBottom="@dimen/_1ssp"
+        android:paddingRight="@dimen/_14ssp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/divTambah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/_5ssp"
+            android:padding="@dimen/_8ssp">
+
+            <com.dc024.ptsgenap_11rpl1_absen11.ui.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:text="TAMBAH" />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

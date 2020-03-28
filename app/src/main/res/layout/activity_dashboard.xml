@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorAccent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/divTopBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0sp"
+                android:layout_marginRight="0sp"
+                android:background="@color/colorAccent"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp">
+
+                <ImageView
+                    android:id="@+id/ivPage"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8sp"
+                    android:gravity="center"
+                    android:src="@drawable/ic_dashboard"
+                    android:tint="#fff" />
+
+                <com.dc024.ptsgenap_11rpl1_absen11.ui.CustomTextViewBold
+                    android:id="@+id/tvPage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#0000"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    android:text="Dashboard"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:visibility="visible" />
+
+
+                <LinearLayout
+                    android:id="@+id/divUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12sp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12sp"
+                    android:paddingTop="5sp"
+                    android:paddingRight="12sp"
+                    android:paddingBottom="5sp">
+
+                    <ImageView
+                        android:layout_width="16sp"
+                        android:layout_height="16sp"
+                        android:layout_marginRight="6sp"
+                        android:src="@drawable/ic_user"
+                        android:tint="#fff" />
+
+                    <com.dc024.ptsgenap_11rpl1_absen11.ui.CustomTextViewRegular
+                        android:id="@+id/tvUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textColor="@android:color/white"
+
+                        android:textSize="10.8sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnadd"
+                android:layout_width="match_parent"
+                android:background="@drawable/login_button_bk2"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="+ CREATE"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/whiteTextColor"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_3sdp"
+            tools:listitem="@layout/list_rv"
+            />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

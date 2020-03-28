@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffac41</color>
+    <color name="colorPrimaryDark">#ffa34d</color>
+    <color name="colorAccent">#F16F00</color>
+
+    <!--colors for modern ui-->
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#ffac41</color>
+    <color name="loginBkColor">#f0f0f0</color>
+
+    <!--colros for card-->
+    <color name="whiteCardColor">#fff</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorRed">#EE2337</color>
+</resources>
